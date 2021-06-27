@@ -8,6 +8,7 @@ function Header() {
                 <p>Totla Followrs : 23,004</p>
             </div>
             <div className="modes">
+                <p>Dark Mode</p>
                 <input type="checkbox" />
                 <div className="slider"></div>
             </div>
