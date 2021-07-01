@@ -181,5 +181,17 @@
     display: grid;
     grid-template-columns: 1fr .5fr;
     grid-template-rows: repeat ( 2, 1fr );
-    padding: 1rem;
+    padding: 1.5rem 3rem;
+}
+.rates-over-view{
+    display: grid;
+    grid-template-columns: .1fr 1fr;
+}
+.page-views,.count{
+    align-self: center;
+    justify-self: start;
+}
+.social-media-icon,.rates-over-view{
+    align-self: center;
+    justify-self: end;
 }
