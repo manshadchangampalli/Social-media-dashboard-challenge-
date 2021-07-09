@@ -1,21 +1,27 @@
-import React, { useState } from 'react'
-import Header from '../Components/Header'
-import FirstHero from '../Components/FirstHero'
-import SecondHero from '../Components/SecondHero'
+import React, { useState } from "react";
+import Header from "../Components/Header";
+import FirstHero from "../Components/FirstHero";
+import {DorLContext} from "../DorLContext";
+import SecondHero from "../Components/SecondHero";
 
 function Main() {
-    const [ dorlmode , setDorlmode ] = useState()
-    const darkorlightmode =  (dorl) =>{
-        setDorlmode(dorl)
-    }
+  const [dorlmode, setDorlmode] = useState();
+  const darkorlightmode = (dorl) => {
+    setDorlmode(dorl);
+  };
 
-    return (
-        <div  className="main">
-            <Header darkorlightmode={darkorlightmode}/>
-            <FirstHero/>
-            <SecondHero/>
-        </div>
-    )
+  return (
+    <div
+      className={dorlmode?"main light":"main"}
+    >
+      
+      <DorLContext.Provider value={dorlmode}>
+        <Header darkorlightmode={darkorlightmode} />
+        <FirstHero />
+        <SecondHero />
+      </DorLContext.Provider>
+    </div>
+  );
 }
 
-export default Main
+export default Main;

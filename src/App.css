@@ -33,7 +33,12 @@
     width: 100%;
     height: 200px;
 }
-
+.main.light::before{
+    background-color:  hsl(225, 100%, 98%);
+}
+.main.light{
+    background-color: hsl(0, 0%, 100%);
+}
 .header{
     width: 100%;
     height: 20%;
@@ -45,6 +50,12 @@
     flex-direction: column;
     width: 100%;
     z-index: 1;
+}
+.light .title h1{
+    color: hsl(230, 17%, 14%);
+}
+.light .title p{
+    color: hsl(228, 12%, 44%);
 }
 
 .modes input{
@@ -84,7 +95,11 @@
 }
 .modes p{
     width: 100%;
+    z-index: 2;
     font-weight: 700;
+}
+.light .modes p{
+    color: hsl(228, 12%, 44%);
 }
 .first-hero{
     margin-top: 2rem;
@@ -105,6 +120,12 @@
     cursor: pointer;
     overflow: hidden;
     border-radius: 6px;
+}
+.light .boxes{
+    background-color: hsl(227, 47%, 96%);
+}
+.light .boxes:hover{
+    background-color: hsl(229, 25%, 87%);
 }
 .boxes:hover{
     background-color:hsl(229, 23%, 28%) ;
