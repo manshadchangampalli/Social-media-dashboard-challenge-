@@ -193,6 +193,9 @@
 .second-hero{
     margin:2rem 0;
 }
+.light .second-hero h1{
+    color: hsl(228, 12%, 44%);
+}
 .second-hero-second-part{
     padding: 2rem 0 5rem 0;
     display: grid;
@@ -202,7 +205,7 @@
     grid-row-gap: 30px;
 }
 .over-view-box{
-    background-color: blue;
+    
     background: hsl(228, 28%, 20%);
     border-radius: 6px;
     display: grid;
@@ -210,13 +213,23 @@
     grid-template-rows: repeat ( 2, 1fr );
     padding: 1.5rem 3rem;
 }
+.light .over-view-box{
+    background-color:hsl(227, 47%, 96%) ;
+}
+
 .rates-over-view{
     display: grid;
     grid-template-columns: .1fr 1fr;
 }
+.light .page-views{
+    color:hsl(228, 12%, 44%) ;
+}
 .page-views,.count{
     align-self: center;
     justify-self: start;
+}
+.light .over-view-box h1{
+   color: hsl(230, 17%, 14%);
 }
 .social-media-icon,.rates-over-view{
     align-self: center;
