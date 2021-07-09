@@ -149,8 +149,14 @@
     color: hsl(228, 34%, 66%);
 
 }
+.light .social-media-username p{
+    color: hsl(228, 12%, 44%);
+}
 .followers h1{
     font-size: 50px;
+}
+.light .followers h1{
+    color:  hsl(230, 17%, 14%);
 }
 .followers{
     display: flex;
