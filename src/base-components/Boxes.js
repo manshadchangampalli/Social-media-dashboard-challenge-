@@ -4,9 +4,7 @@ import BeforeDivBoxes from "./BeforeDivBoxes";
 
 function Boxes(props) {
     const [socialMedia , setSocialMedia] =useState(props.socialmedia)
-    const[upordown,setUpordown] = useState(props.rateicon)
-    console.log(upordown);
-    
+    const[upordown,setUpordown] = useState(props.rateicon)    
     let ratesColor="";
     {upordown==='down'? ratesColor='hsl(356, 69%, 56%)':ratesColor="hsl(163, 72%, 41%)"}
 

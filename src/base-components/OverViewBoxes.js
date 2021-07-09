@@ -6,14 +6,13 @@ function OverViewBoxes(props) {
   const [upordown, setUpordown] = useState(props.upordown);
   let ratesColor = "";
   {upordown === "up" ?  ratesColor = "hsl(163, 72%, 41%)" :  ratesColor = "hsl(356, 69%, 56%)"}
-  console.log(ratesColor);
   return (
     <div className="over-view-box">
-      <p className="page-views">Page Views</p>
+      <p className="page-views">{props.details}</p>
       <p className="social-media-icon">
         <SocialMedia socialMedia={socialMedia}/>
       </p>
-      <h1 className="count">87</h1>
+      <h1 className="count">{props.count}</h1>
       <div className="rates-over-view">
         
         {upordown === "down"? 
@@ -30,7 +29,7 @@ function OverViewBoxes(props) {
       </p>
         } 
 
-        <p style={{ color: ratesColor }}>12% </p>
+        <p style={{ color: ratesColor }}>{props.percentage}% </p>
       </div>
     </div>
   );

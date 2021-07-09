@@ -170,8 +170,8 @@
     padding: 2rem 0 5rem 0;
     display: grid;
     grid-template-columns:repeat(4 , 1fr);
-    grid-template-rows:  200px 200px;
-    grid-column-gap: 20px;
+    grid-template-rows:  175px 175px;
+    grid-column-gap: 50px;
     grid-row-gap: 30px;
 }
 .over-view-box{
@@ -194,4 +194,7 @@
 .social-media-icon,.rates-over-view{
     align-self: center;
     justify-self: end;
+}
+.page-views{
+    color: hsl(228, 34%, 66%);
 }
