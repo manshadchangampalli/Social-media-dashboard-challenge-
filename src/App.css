@@ -75,7 +75,7 @@
     top: 3px;
     transition: all .5s ease , background-color .1s ease ;
     
-    left: 4px;
+    left: 2px;
     border-radius: 100%;
     background-color:  hsl(230, 17%, 14%);
 }
@@ -191,7 +191,7 @@
 /* Second Hero Styling */
 
 .second-hero{
-    margin:2rem 0;
+    margin:2rem 0 0 0;
 }
 .light .second-hero h1{
     color: hsl(228, 12%, 44%);
@@ -237,4 +237,91 @@
 }
 .page-views{
     color: hsl(228, 34%, 66%);
+}
+@media only screen and (min-width: 1000px) and (max-width: 1360px){
+    .first-hero {
+        
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 50px;
+    }
+    .second-hero-second-part{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 30px;
+
+    }
+    .modes p {
+        
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width: 767px) and (max-width: 999px){
+    .first-hero {
+            
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 30px;
+        }
+        .second-hero-second-part{
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 20px;
+
+        }
+        .over-view-box{
+            grid-template-rows: 2fr 1fr;
+            padding: 1.5rem 2rem;
+        }
+        .modes p {
+            
+            font-size: 12px;
+        }
+}
+@media only screen and (max-width: 766px){
+    .header{
+        display: grid;
+        grid-template-columns: 1fr;
+       grid-template-rows: 1fr 1fr;
+       grid-row-gap: 20px;
+    }
+    .modes input {
+        width: 65px;
+    }
+    .first-hero {
+            
+            grid-template-columns: 1fr;
+            grid-gap: 30px;
+        }
+        .second-hero-second-part{
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+
+        }
+        .over-view-box{
+            grid-template-rows: 2fr 1fr;
+            padding: 1.5rem 2rem;
+        }
+        .modes p {
+            
+            font-size: 18px;
+        }
+        .modes{
+            z-index: 2;
+            border-top: 1px solid rgba(255, 255, 255, 0.527);
+        }
+        @media only screen and (max-width: 640px){
+            .main {
+                padding: 2rem 3rem;
+            }
+        }
+        @media only screen and (max-width: 488px){
+            .title h1 , .overview-today{
+                font-size: 28px;
+                
+            }
+            
+        }@media only screen and (max-width: 350px){
+            .title h1 , .overview-today{
+                font-size: 20px;
+                
+            }
+            
+        }
 }

@@ -4,7 +4,7 @@ import OverViewBoxes from "../base-components/OverViewBoxes";
 function SecondHero() {
   return (
     <div className="second-hero">
-      <h1>Overview - Today</h1>
+      <h1 className="overview-today">Overview - Today</h1>
       <div className="second-hero-second-part">
         <OverViewBoxes
           upordown="up"
